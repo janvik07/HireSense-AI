@@ -1,0 +1,54 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache / build
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets / credentials
+.env
+.env.*
+*.key
+*.pem
+secrets.toml
+.streamlit/secrets.toml
+
+# Candidate / personal data - NEVER commit real resumes
+data/raw/
+data/private/
+data/uploads/
+uploads/
+*.pdf
+*.docx
+!data/demo/**/*.pdf
+!data/demo/**/*.docx
+
+# Large model files and training artefacts
+models_saved/*.pt
+models_saved/*.pth
+models_saved/*.bin
+models_saved/*.safetensors
+*.ckpt
+.cache/
+huggingface/
+
+# Reports generated locally
+reports/
+exports/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

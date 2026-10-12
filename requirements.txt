@@ -1,0 +1,27 @@
+# HireSense AI - dependencies (tested target: Python 3.12, CPU-only is fine)
+# Install with:  python -m pip install -r requirements.txt
+#
+# NOTE (Windows, smaller download): install the CPU build of PyTorch first, then the rest:
+#   python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   python -m pip install -r requirements.txt
+# pip will then see torch is already installed and skip the large CUDA build.
+
+# --- Web UI ---
+streamlit>=1.40,<2.0
+
+# --- Core data / classic ML ---
+numpy>=1.26,<3.0
+pandas>=2.2,<4.0
+scikit-learn>=1.5,<2.0
+scipy>=1.13,<2.0
+
+# --- Document parsing ---
+PyMuPDF>=1.24
+python-docx>=1.1,<2.0
+
+# --- Deep learning / transformers ---
+torch>=2.4
+sentence-transformers>=3.0,<6.0
+
+# --- Testing ---
+pytest>=8.0
